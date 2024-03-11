@@ -147,25 +147,6 @@
                     </div>
                 </div> <!-- END: col-md-8 -->
                 <div class="col-md-4 sidebar ftco-animate">
-                    <div class="sidebar-box">
-                        <form action="#" class="search-form">
-                            <div class="form-group">
-                                <span class="icon fa fa-search"></span>
-                                <input type="text" class="form-control" placeholder="Type a keyword and hit enter">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="sidebar-box ftco-animate">
-                        <div class="categories">
-                            <h3>Categories</h3>
-                            <li><a href="#">Food <span>(12)</span></a></li>
-                            <li><a href="#">Dish <span>(22)</span></a></li>
-                            <li><a href="#">Desserts <span>(37)</span></a></li>
-                            <li><a href="#">Drinks <span>(42)</span></a></li>
-                            <li><a href="#">Ocassion <span>(14)</span></a></li>
-                        </div>
-                    </div>
-
                     <div class="sidebar-box ftco-animate">
                         <h3>Recent Blog</h3>
                         <div class="block-21 mb-4 d-flex">
@@ -217,10 +198,6 @@
                         </div>
                     </div>
 
-                    <div class="sidebar-box ftco-animate">
-                        <h3>Paragraph</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
-                    </div>
                 </div>
             </div>
         </div>

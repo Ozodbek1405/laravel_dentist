@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use TCG\Voyager\Facades\Voyager;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,7 +35,9 @@ Route::get('/doctors', function () {
 Route::get('/services', function () {
     return view('services.services');
 });
-
+Route::get('/appointment', function () {
+    return view('appointment.appointment');
+});
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

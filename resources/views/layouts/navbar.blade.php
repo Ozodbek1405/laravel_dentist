@@ -13,11 +13,7 @@
                 <li class="nav-item"><a href="/doctors" class="nav-link">Doctors</a></li>
                 <li class="nav-item"><a href="/blog" class="nav-link">Blog</a></li>
                 <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
-                <li class="nav-item cta">
-                    <a href="#" class="nav-link" data-toggle="modal" data-target="#modalRequest">
-                        <span>Make an Appointment</span>
-                    </a>
-                </li>
+                <li class="nav-item"><a href="/appointment" class="nav-link">Appointment</a></li>
             </ul>
         </div>
     </div>
