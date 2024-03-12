@@ -15,8 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('title')->nullable();
             $table->string('description')->nullable();
-            $table->longText('text')->nullable();
+            $table->longText('text_uz')->nullable();
+            $table->longText('text_ru')->nullable();
             $table->string('image')->nullable();
+            $table->integer('views')->nullable();
             $table->timestamps();
         });
     }

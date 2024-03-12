@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use TCG\Voyager\Facades\Voyager;
 
@@ -14,17 +16,23 @@ use TCG\Voyager\Facades\Voyager;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
+//Voyager
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
 });
+
+//Language Translation
+Route::get('index/{locale}', [HomeController::class, 'lang']);
+
+//home
+Route::get('/',[HomeController::class,'index'])->name('home.index');
+
+//blog
+Route::get('/blog',[BlogController::class,'index'])->name('blog.index');
+Route::get('/blog-single/{blog_id}',[BlogController::class,'single'])->name('blog.single');
+
 Route::get('/about', function () {
     return view('about.about');
-});
-Route::get('/blog', function () {
-    return view('blog.blog');
-});
-Route::get('/blog-single', function () {
-    return view('blog.blog-single');
 });
 Route::get('/contact', function () {
     return view('contact.contact');
@@ -39,6 +47,4 @@ Route::get('/appointment', function () {
     return view('appointment.appointment');
 });
 
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});
+

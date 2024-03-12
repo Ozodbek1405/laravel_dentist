@@ -324,54 +324,28 @@
                 </div>
             </div>
             <div class="row">
+                @foreach($most_blogs as $most_blog)
                 <div class="col-md-4 ftco-animate">
                     <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
+                        <a href="{{route('blog.single',$most_blog->id)}}" class="block-20"
+                           style="background-image: url({{asset('storage/'.str_replace("\\","/",$most_blog->image))}});">
                         </a>
                         <div class="text d-flex py-4">
                             <div class="meta mb-3">
-                                <div><a href="#">Sep. 20, 2018</a></div>
-                                <div><a href="#">Admin</a></div>
-                                <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                                <div>{{$most_blog->created_at->format('M d,Y')}}</div>
+                                <div>Admin</div>
                             </div>
                             <div class="desc pl-3">
-                                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                                <h3 class="heading">
+                                    <a href="{{route('blog.single',$most_blog->id)}}">
+                                        {{$most_blog->getTranslatedAttribute('title',Session::get('lang') , 'fallbackLocale')}}
+                                    </a>
+                                </h3>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 ftco-animate">
-                    <div class="blog-entry" data-aos-delay="100">
-                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
-                        </a>
-                        <div class="text d-flex py-4">
-                            <div class="meta mb-3">
-                                <div><a href="#">Sep. 20, 2018</a></div>
-                                <div><a href="#">Admin</a></div>
-                                <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                            </div>
-                            <div class="desc pl-3">
-                                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 ftco-animate">
-                    <div class="blog-entry" data-aos-delay="200">
-                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
-                        </a>
-                        <div class="text d-flex py-4">
-                            <div class="meta mb-3">
-                                <div><a href="#">Sep. 20, 2018</a></div>
-                                <div><a href="#">Admin</a></div>
-                                <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                            </div>
-                            <div class="desc pl-3">
-                                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
