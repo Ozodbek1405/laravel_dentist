@@ -1,5 +1,7 @@
 @extends('layouts.main')
-
+@section('title')
+    BLOG-SINGLE
+@endsection
 
 @section('content')
 

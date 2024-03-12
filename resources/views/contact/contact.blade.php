@@ -1,5 +1,7 @@
 @extends('layouts.main')
-
+@section('title')
+    CONTACT
+@endsection
 @section('content')
 
     <section class="home-slider owl-carousel">

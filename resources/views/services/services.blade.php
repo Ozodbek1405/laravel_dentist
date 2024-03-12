@@ -1,4 +1,7 @@
 @extends('layouts.main')
+@section('title')
+    SERVICES
+@endsection
 
 @section('content')
 

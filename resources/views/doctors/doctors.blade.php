@@ -1,4 +1,7 @@
 @extends('layouts.main')
+@section('title')
+    DOCTORS
+@endsection
 
 @section('content')
 
