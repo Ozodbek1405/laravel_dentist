@@ -22,9 +22,6 @@
                 <li class="nav-item" id="blog">
                     <a href="/blog" class="nav-link">Blog</a>
                 </li>
-                <li class="nav-item" id="contact">
-                    <a href="/contact" class="nav-link">Contact</a>
-                </li>
                 <li class="nav-item" id="appointment">
                     <a href="/appointment" class="nav-link">Appointment</a>
                 </li>

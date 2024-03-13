@@ -34,13 +34,13 @@
                     <p>
                         {{$blog->getTranslatedAttribute('description',Session::get('lang') , 'fallbackLocale')}}
                     </p>
-                    <p>
-                        <img src="{{asset('storage/'.str_replace("\\","/",$blog->image))}}" alt="" class="img-fluid">
-                    </p>
-                    @if(session('lang') == 'uz')
-                        <p>{!! $blog->text_uz !!}</p>
+                    <div >
+                        <img style="height: 500px" src="{{asset('storage/'.str_replace("\\","/",$blog->image))}}" alt="#" class="img-fluid">
+                    </div>
+                    @if(session('lang') == 'en')
+                        <p>{!! $blog->text_en !!}</p>
                     @else
-                        <p>{!! $blog->text_ru !!}</p>
+                        <p>{!! $blog->text_uz !!}</p>
                     @endif
                 </div> <!-- .col-md-8 -->
                 <div class="col-md-4 sidebar ftco-animate">

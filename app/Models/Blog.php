@@ -15,7 +15,7 @@ class Blog extends Model
         'title',
         'description',
         'text_uz',
-        'text_ru',
+        'text_en',
         'image',
         'views'
     ];

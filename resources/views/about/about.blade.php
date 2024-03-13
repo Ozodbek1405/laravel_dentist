@@ -6,12 +6,16 @@
 @section('content')
 
     <section class="home-slider owl-carousel">
-        <div class="slider-item bread-item" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+        <div class="slider-item bread-item" style="background-image: url({{asset('images/bg_1.jpg')}});" data-stellar-background-ratio="0.5">
             <div class="overlay"></div>
             <div class="container" data-scrollax-parent="true">
                 <div class="row slider-text align-items-end">
                     <div class="col-md-7 col-sm-12 ftco-animate mb-5">
-                        <p class="breadcrumbs" data-scrollax=" properties: { translateY: '70%', opacity: 1.6}"><span class="mr-2"><a href="index.html">Home</a></span> <span>About</span></p>
+                        <p class="breadcrumbs" data-scrollax=" properties: { translateY: '70%', opacity: 1.6}">
+                            <span class="mr-2">
+                                <a href="{{route('home.index')}}">Home</a>
+                            </span> <span>About</span>
+                        </p>
                         <h1 class="mb-3" data-scrollax=" properties: { translateY: '70%', opacity: .9}">About Us</h1>
                     </div>
                 </div>
@@ -22,7 +26,7 @@
     <section class="ftco-section">
         <div class="container">
             <div class="row d-md-flex">
-                <div class="col-md-6 ftco-animate img about-image order-md-last" style="background-image: url(images/about.jpg);">
+                <div class="col-md-6 ftco-animate img about-image order-md-last" style="background-image: url({{asset('images/about.jpg')}});">
                 </div>
                 <div class="col-md-6 ftco-animate pr-md-5 order-md-first">
                     <div class="row">
@@ -113,141 +117,4 @@
             </div>
         </div>
     </section>
-
-    <section class="ftco-section testimony-section bg-light">
-        <div class="container">
-            <div class="row justify-content-center mb-5 pb-3">
-                <div class="col-md-7 text-center heading-section ftco-animate">
-                    <h2 class="mb-2">Testimony</h2>
-                    <span class="subheading">Our Happy Customer Says</span>
-                </div>
-            </div>
-            <div class="row justify-content-center ftco-animate">
-                <div class="col-md-8">
-                    <div class="carousel-testimony owl-carousel ftco-owl">
-                        <div class="item">
-                            <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-5" style="background-image: url(images/person_1.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                                </div>
-                                <div class="text text-center">
-                                    <p class="mb-5">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-                                    <p class="name">Dennis Green</p>
-                                    <span class="position">Marketing Manager</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-5" style="background-image: url(images/person_2.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                                </div>
-                                <div class="text text-center">
-                                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Dennis Green</p>
-                                    <span class="position">Interface Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-5" style="background-image: url(images/person_3.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                                </div>
-                                <div class="text text-center">
-                                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Dennis Green</p>
-                                    <span class="position">UI Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-5" style="background-image: url(images/person_1.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                                </div>
-                                <div class="text text-center">
-                                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Dennis Green</p>
-                                    <span class="position">Web Developer</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-5" style="background-image: url(images/person_1.jpg)">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                                </div>
-                                <div class="text text-center">
-                                    <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Dennis Green</p>
-                                    <span class="position">System Analytics</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/bg_1.jpg);" data-stellar-background-ratio="0.5">
-        <div class="container">
-            <div class="row d-flex align-items-center">
-                <div class="col-md-3 aside-stretch py-5">
-                    <div class=" heading-section heading-section-white ftco-animate pr-md-4">
-                        <h2 class="mb-3">Achievements</h2>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                    </div>
-                </div>
-                <div class="col-md-9 py-5 pl-md-5">
-                    <div class="row">
-                        <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
-                            <div class="block-18">
-                                <div class="text">
-                                    <strong class="number" data-number="14">0</strong>
-                                    <span>Years of Experience</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
-                            <div class="block-18">
-                                <div class="text">
-                                    <strong class="number" data-number="4500">0</strong>
-                                    <span>Qualified Dentist</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
-                            <div class="block-18">
-                                <div class="text">
-                                    <strong class="number" data-number="4200">0</strong>
-                                    <span>Happy Smiling Customer</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
-                            <div class="block-18">
-                                <div class="text">
-                                    <strong class="number" data-number="320">0</strong>
-                                    <span>Patients Per Year</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
 @endsection

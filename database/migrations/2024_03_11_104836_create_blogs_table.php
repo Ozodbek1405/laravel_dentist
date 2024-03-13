@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('title')->nullable();
             $table->string('description')->nullable();
             $table->longText('text_uz')->nullable();
-            $table->longText('text_ru')->nullable();
+            $table->longText('text_en')->nullable();
             $table->string('image')->nullable();
             $table->integer('views')->nullable();
             $table->timestamps();

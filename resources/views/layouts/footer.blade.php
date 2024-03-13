@@ -7,20 +7,24 @@
             <div class="col-md-3">
                 <div class="ftco-footer-widget mb-4">
                     <h2 class="ftco-heading-2">DentaCare.</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    @if(session('lang') == 'en')
+                        <p>{{ setting('footer.footer_text_en') }}</p>
+                    @else
+                        <p>{{ setting('footer.footer_text_uz') }}</p>
+                    @endif
                 </div>
                 <ul class="ftco-footer-social list-unstyled float-md-left float-lft ">
                     <li class="ftco-animate">
-                        <a href="#"><span class="icon-youtube-play"></span></a>
+                        <a href="{{setting('footer.youtube_link')}}"><span class="icon-youtube-play"></span></a>
                     </li>
                     <li class="ftco-animate">
-                        <a href="#"><span class="icon-facebook"></span></a>
+                        <a href="{{setting('footer.facebook_link')}}"><span class="icon-facebook"></span></a>
                     </li>
                     <li class="ftco-animate">
-                        <a href="#"><span class="icon-telegram"></span></a>
+                        <a href="{{setting('footer.telegram_link')}}"><span class="icon-telegram"></span></a>
                     </li>
                     <li class="ftco-animate">
-                        <a href="#"><span class="icon-instagram"></span></a>
+                        <a href="{{setting('footer.instagram_link')}}"><span class="icon-instagram"></span></a>
                     </li>
                 </ul>
             </div>
@@ -32,7 +36,6 @@
                         <li><a href="/doctors" class="py-2 d-block">Doctors</a></li>
                         <li><a href="/services" class="py-2 d-block">Services</a></li>
                         <li><a href="/blog" class="py-2 d-block">Blog</a></li>
-                        <li><a href="/contact" class="py-2 d-block">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -64,9 +67,18 @@
                     <h2 class="ftco-heading-2">Office</h2>
                     <div class="block-23 mb-3">
                         <ul>
-                            <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-                            <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-                            <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+                            <li>
+                                <span class="icon icon-map-marker"></span>
+                                <span class="text">{{setting('footer.footer_address')}}</span>
+                            </li>
+                            <li>
+                                <span class="icon icon-phone"></span>
+                                <span class="text">{{setting('footer.footer_phone')}}</span>
+                            </li>
+                            <li>
+                                <span class="icon icon-envelope"></span>
+                                <span class="text">{{setting('footer.email_footer')}}</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -74,7 +86,6 @@
         </div>
         <div class="row">
             <div class="col-md-12 text-center">
-
                 <p>
                     &copy;<script>document.write(new Date().getFullYear());</script>
                     | <i class="icon-heart" aria-hidden="true"></i>

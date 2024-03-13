@@ -6,5 +6,9 @@ use Illuminate\Http\Request;
 
 class ApplicationController extends Controller
 {
-    //
+    public function appointment()
+    {
+        return view('appointment.appointment');
+    }
+
 }

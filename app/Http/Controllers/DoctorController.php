@@ -6,5 +6,9 @@ use Illuminate\Http\Request;
 
 class DoctorController extends Controller
 {
-    //
+    public function doctor()
+    {
+        return view('doctors.doctors');
+    }
+
 }
