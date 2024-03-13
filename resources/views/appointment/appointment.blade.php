@@ -41,33 +41,39 @@
                     <div class="heading-section mb-5 ftco-animate">
                         <h2 class="mb-2">Get a Free Quote</h2>
                     </div>
-                    <form action="#" class="ftco-animate">
+                    @if (session('success'))
+                        <div class="alert alert-success">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+                    <form action="{{route('application.send')}}" class="ftco-animate" method="POST">
+                        @csrf
                         <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Full Name">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Email">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Phone">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Website">
-                                </div>
-                            </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                                    <input type="text" name="name" class="form-control" placeholder="Full Name">
                                 </div>
                             </div>
+                            @error('name')
+                                <p class="text-danger">{{ $message }}</p>
+                            @enderror
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" id="phone" name="phone" class="form-control" placeholder="Phone">
+                                </div>
+                            </div>
+                            @error('phone')
+                            <p class="text-danger">{{ $message }}</p>
+                            @enderror
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="message"></label>
+                                    <textarea name="message" id="message" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            @error('message')
+                            <p class="text-danger">{{ $message }}</p>
+                            @enderror
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <input type="submit" value="Get a Quote" class="btn btn-primary py-3 px-5">
@@ -80,5 +86,13 @@
         </div>
     </section>
 
-
 @endsection
+@push('scripts')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/jquery.inputmask.min.js"></script>
+    <script>
+        $('#phone').inputmask({
+            mask: '+999 99 999-99-99',
+            removeMaskOnSubmit: true
+        });
+    </script>
+@endpush

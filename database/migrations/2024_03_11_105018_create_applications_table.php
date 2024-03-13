@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('applications', function (Blueprint $table) {
             $table->id();
             $table->string('name')->nullable();
-            $table->integer('phone')->nullable();
+            $table->string('phone')->nullable();
             $table->longText('message')->nullable();
             $table->timestamps();
         });

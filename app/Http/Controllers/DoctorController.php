@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+
+use App\Models\Doctor;
 
 class DoctorController extends Controller
 {
     public function doctor()
     {
-        return view('doctors.doctors');
+        $doctors = Doctor::query()->get();
+        return view('doctors.doctors',compact('doctors'));
     }
 
 }

@@ -45,5 +45,6 @@ Route::get('/services',[ServiceController::class,'services'])->name('services.in
 
 //appointment
 Route::get('/appointment',[ApplicationController::class,'appointment'])->name('appointment.index');
+Route::post('/application',[ApplicationController::class,'application'])->name('application.send');
 
 
