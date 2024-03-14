@@ -51,7 +51,7 @@
                             <span class="align-middle">UZBEK</span>
                         </a>
                         <!-- item-->
-                        <a href="{{ url('index/en') }}" class="dropdown-item notify-item language py-2" data-lang="ru"
+                        <a href="{{ url('index/en') }}" class="dropdown-item notify-item language py-2" data-lang="en"
                            title="ENG">
                             <img src="{{ URL::asset('images/flags/us.svg') }}" alt="user-image"
                                  class="me-2 rounded" height="20">
