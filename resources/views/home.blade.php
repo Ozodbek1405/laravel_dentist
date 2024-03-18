@@ -98,42 +98,43 @@
 
     <section class="ftco-section">
         <div class="container">
-            <div class="row justify-content-center mb-5 pb-5">
+            <div class="row justify-content-center">
                 <div class="col-md-7 text-center heading-section ftco-animate">
-                    <h2 class="mb-3">Meet Our Experience Dentist</h2>
-                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences</p>
+                    <h2 class="mb-1">Meet Our Experience Dentist</h2>
+                    <h4 class="mb-0">Садыков Айбек Шавкатович </h4>
+                    <h5>Врач-терапевт, ортопед.</h5>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="section mb-5">
+        <div class="container">
             <div class="row">
-                @foreach($doctors as $doctor)
-                    <div class="col-lg-3 col-md-6 d-flex mb-sm-4 ftco-animate">
-                        <div class="staff">
-                            <div class="img mb-4" style="background-image: url({{asset('storage/'.str_replace("\\","/",$doctor->image))}});"></div>
-                            <div class="info text-center">
-                                <h3>{{$doctor->name}}</h3>
-                                <span class="position">{{$doctor->position}}</span>
-                                <div class="text">
-                                    <p>{{$doctor->description}}</p>
-                                    <ul class="ftco-social">
-                                        <li class="ftco-animate">
-                                            <a href="{{$doctor->telegram_link}}"><span class="icon-telegram"></span></a>
-                                        </li>
-                                        <li class="ftco-animate">
-                                            <a href="{{$doctor->instagram_link}}"><span class="icon-instagram"></span></a>
-                                        </li>
-                                        <li class="ftco-animate">
-                                            <a href="{{$doctor->facebook_link}}"><span class="icon-facebook"></span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-img-block">
+                        <img src="{{asset('images/person_5.jpg')}}" alt="#" class="img-fluid w-100 rounded">
                     </div>
-                @endforeach
-            </div>
-            <div class="row  mt-5 justify-conten-center">
-                <div class="col-md-8 ftco-animate">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi vero accusantium sunt sit aliquam ipsum molestias autem perferendis, incidunt cumque necessitatibus cum amet cupiditate, ut accusamus. Animi, quo. Laboriosam, laborum.</p>
+                </div>
+
+                <div class="col-lg-8 col-md-6">
+                    <div class="doctor-details mt-lg-0">
+                        <div>
+                            Национальный Медицинский Университет
+                            им. А.А.Богомольца, Украина, г.Киев. <br>
+                            Более 8 лет практической работы
+                        </div>
+                        <div class="divider my-4"></div>
+                        <p>
+                            Я стоматолог, который творит искусство. Словно скульптор, только в стоматологии)
+                            Мой мрамор, это ваши зубы. И я готов воплотить все ваши капризы! В мои обязанности входит лечение кариозных поражений твёрдых тканей зубов и восстановление их анатомии и морфологии, прямой или непрямой реставрацией (композитными материалами или керамическими конструкциями).
+                            Работая в Dentalis Nur, я обрел огромный опыт, крутой коллектив и возможность расти и развиваться.
+                            Для меня самое важное в работе - это заниматься любимым делом и совершенствоваться!
+                        </p>
+                        <a href="{{route('appointment.index')}}" class="btn btn-primary btn-round-full mt-3">
+                            Make an Appointment
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

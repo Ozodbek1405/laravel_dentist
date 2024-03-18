@@ -26,7 +26,8 @@
             <div class="row justify-content-center">
                 <div class="col-md-7 text-center heading-section ftco-animate">
                     <h2 class="mb-1">Meet Our Experience Dentist</h2>
-                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences</p>
+                    <h4 class="mb-0">Садыков Айбек Шавкатович </h4>
+                    <h5>Врач-терапевт, ортопед.</h5>
                 </div>
             </div>
         </div>
@@ -48,10 +49,10 @@
                                 С 2023 в клинике Hollywood smile <br>
                             </p>
                             <ul class="list-inline mt-4 doctor-social-links">
-                                <li class="list-inline-item"><a href="#!"><i class="icon-facebook"></i></a></li>
-                                <li class="list-inline-item"><a href="#!"><i class="icon-twitter"></i></a></li>
-                                <li class="list-inline-item"><a href="#!"><i class="icon-instagram"></i></a></li>
-                                <li class="list-inline-item"><a href="#!"><i class="icon-telegram"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="icon-facebook"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="icon-twitter"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="icon-instagram"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="icon-telegram"></i></a></li>
                             </ul>
 
                             <a href="{{route('appointment.index')}}" class="btn btn-primary btn-round-full mt-3">
@@ -63,8 +64,6 @@
 
                 <div class="col-lg-8 col-md-6">
                     <div class="doctor-details mt-lg-0">
-                        <h2 class="mb-0">Садыков Айбек Шавкатович </h2>
-                        <h5>Врач-терапевт, ортопед.</h5>
                         <div>
                             Национальный Медицинский Университет
                             им. А.А.Богомольца, Украина, г.Киев. <br>
