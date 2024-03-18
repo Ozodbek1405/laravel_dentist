@@ -6,7 +6,7 @@
         <div class="row mb-5">
             <div class="col-md-3">
                 <div class="ftco-footer-widget mb-4">
-                    <img class="w-75" src="{{asset('images/footer-logo.png')}}" alt="Logo">
+                    <img class="w-100" src="{{asset('images/footer-logo.png')}}" alt="Logo">
                 </div>
                 <ul class="ftco-footer-social list-unstyled float-md-left float-lft ">
                     <li class="">
