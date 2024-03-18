@@ -36,19 +36,23 @@
         <div class="container">
             <div class="row justify-content-center mb-5 pb-5">
                 <div class="col-md-7 text-center heading-section ftco-animate">
-                    <h2 class="mb-2">Our Service Keeps you Smile</h2>
-                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                    <a href="{{route('services.index')}}">
+                        <h2 class="mb-2">Новая улыбка — новая жизнь</h2>
+                    </a>
+                    <p>Наш сервис дарит вам улыбку.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-3 d-flex align-self-stretch ftco-animate">
                     <div class="media block-6 services d-block text-center">
                         <div class="icon d-flex justify-content-center align-items-center">
-                            <span class="flaticon-tooth-1"></span>
+                            <span class="flaticon-tooth"></span>
                         </div>
                         <div class="media-body p-2 mt-3">
-                            <h3 class="heading">Teeth Whitening</h3>
-                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                            <h3 class="heading">Отбеливание зубов</h3>
+                            <p>
+                                процедура, направленная на изменение цвета зубов. В процессе процедуры происходит разрушение пигмента располагающегося в пространствах между призмами эмали, а не на поверхности зубов.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -58,8 +62,10 @@
                             <span class="flaticon-dental-care"></span>
                         </div>
                         <div class="media-body p-2 mt-3">
-                            <h3 class="heading">Teeth Cleaning</h3>
-                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                            <h3 class="heading">Профессиональная чистка зубов</h3>
+                            <p>
+                                это процедура ухода за полостью рта, направленная на профилактику заболеваний зубов и десен. Появляющийся на зубах в недоступных для чистки зубной щеткой местах налет постепенно кристаллизуется в камни, которые располагаются над и под десной.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -69,8 +75,9 @@
                             <span class="flaticon-tooth-with-braces"></span>
                         </div>
                         <div class="media-body p-2 mt-3">
-                            <h3 class="heading">Quality Brackets</h3>
-                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                            <h3 class="heading">Качественные брекеты</h3>
+                            <p>"Коррекция зубов никогда не была такой простой! Наши брекеты обеспечивают комфорт и эффективность для вашей улыбки."
+                                "Узнайте, как наши инновационные брекеты могут преобразить вашу улыбку. Доверьтесь профессионалам для лучших результатов."</p>
                         </div>
                     </div>
                 </div>
@@ -80,8 +87,8 @@
                             <span class="flaticon-anesthesia"></span>
                         </div>
                         <div class="media-body p-2 mt-3">
-                            <h3 class="heading">Modern Anesthetic</h3>
-                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                            <h3 class="heading">Анестезия</h3>
+                            <p>В стоматологии анестезия играет важную роль, особенно при проведении более сложных и болезненных процедур, таких как удаление зубов, лечение каналов, имплантация и другие. Анестезия помогает пациентам чувствовать минимум дискомфорта и боли во время лечения.</p>
                         </div>
                     </div>
                 </div>

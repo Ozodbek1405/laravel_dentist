@@ -37,7 +37,7 @@
                     <div >
                         <img style="height: 500px" src="{{asset('storage/'.str_replace("\\","/",$blog->image))}}" alt="#" class="img-fluid">
                     </div>
-                    @if(session('lang') == 'en')
+                    @if(session('lang') == 'ru')
                         <p>{!! $blog->text_en !!}</p>
                     @else
                         <p>{!! $blog->text_uz !!}</p>

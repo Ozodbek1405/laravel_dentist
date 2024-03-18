@@ -1,29 +1,24 @@
 @php
- $most_blogs = App\Models\Blog::query()->orderByDesc('views')->limit('3')->get();
+ $most_blogs = App\Models\Blog::query()->orderByDesc('views')->limit('2')->get();
 @endphp
 <footer class="ftco-footer ftco-bg-dark ftco-section">
     <div class="container">
         <div class="row mb-5">
             <div class="col-md-3">
                 <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">DentaCare.</h2>
-                    @if(session('lang') == 'en')
-                        <p>{{ setting('footer.footer_text_en') }}</p>
-                    @else
-                        <p>{{ setting('footer.footer_text_uz') }}</p>
-                    @endif
+                    <img class="w-75" src="{{asset('images/footer-logo.png')}}" alt="Logo">
                 </div>
                 <ul class="ftco-footer-social list-unstyled float-md-left float-lft ">
-                    <li class="ftco-animate">
+                    <li class="">
                         <a href="{{setting('footer.youtube_link')}}"><span class="icon-youtube-play"></span></a>
                     </li>
-                    <li class="ftco-animate">
+                    <li class="">
                         <a href="{{setting('footer.facebook_link')}}"><span class="icon-facebook"></span></a>
                     </li>
-                    <li class="ftco-animate">
+                    <li class="">
                         <a href="{{setting('footer.telegram_link')}}"><span class="icon-telegram"></span></a>
                     </li>
-                    <li class="ftco-animate">
+                    <li class="">
                         <a href="{{setting('footer.instagram_link')}}"><span class="icon-instagram"></span></a>
                     </li>
                 </ul>

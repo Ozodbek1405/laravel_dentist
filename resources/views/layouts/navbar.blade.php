@@ -1,6 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-        <a class="navbar-brand" href="/">Denta<span>Care</span></a>
+        <a class="navbar-brand" href="/">
+            <img class="w-50 h-25" src="{{asset('images/site-logo.png')}}" alt="Logo">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="oi oi-menu"></span> Menu
         </button>
@@ -29,9 +31,9 @@
                     <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         @switch(Session::get('lang'))
-                            @case('en')
-                                <img src="{{ URL::asset('/images/flags/us.svg') }}" class="rounded"
-                                     alt="ENG" height="20">
+                            @case('ru')
+                                <img src="{{ URL::asset('/images/flags/ru.svg') }}" class="rounded"
+                                     alt="RU" height="20">
                                 @break
                             @case('uz')
                                 <img src="{{ URL::asset('/images/flags/uz.svg') }}" class="rounded"
@@ -51,11 +53,11 @@
                             <span class="align-middle">UZBEK</span>
                         </a>
                         <!-- item-->
-                        <a href="{{ url('index/en') }}" class="dropdown-item notify-item language py-2" data-lang="en"
-                           title="ENG">
-                            <img src="{{ URL::asset('images/flags/us.svg') }}" alt="user-image"
+                        <a href="{{ url('index/ru') }}" class="dropdown-item notify-item language py-2" data-lang="ru"
+                           title="RUS">
+                            <img src="{{ URL::asset('images/flags/ru.svg') }}" alt="user-image"
                                  class="me-2 rounded" height="20">
-                            <span class="align-middle">ENGLISH</span>
+                            <span class="align-middle">RUSSIAN</span>
                         </a>
                     </div>
                 </div>
