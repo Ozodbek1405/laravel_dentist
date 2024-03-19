@@ -25,18 +25,19 @@
             </div>
             <div class="col-md-2">
                 <div class="ftco-footer-widget mb-4 ml-md-5">
-                    <h2 class="ftco-heading-2">Quick Links</h2>
+                    <h2 class="ftco-heading-2">@lang('translation.links')</h2>
                     <ul class="list-unstyled">
-                        <li><a href="/about" class="py-2 d-block">About</a></li>
-                        <li><a href="/doctors" class="py-2 d-block">Doctors</a></li>
-                        <li><a href="/services" class="py-2 d-block">Services</a></li>
-                        <li><a href="/blog" class="py-2 d-block">Blog</a></li>
+                        <li><a href="/about" class="py-2 d-block">@lang('translation.about')</a></li>
+                        <li><a href="/about" class="py-2 d-block">@lang('translation.services')</a></li>
+                        <li><a href="/doctors" class="py-2 d-block">@lang('translation.doctor')</a></li>
+                        <li><a href="/blog" class="py-2 d-block">@lang('translation.blog')</a></li>
+                        <li><a href="/appointment" class="py-2 d-block">@lang('translation.appointment')</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-4 pr-md-4">
                 <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">Most Blog</h2>
+                    <h2 class="ftco-heading-2">@lang('translation.news')</h2>
                     @foreach($most_blogs as $most_blog)
                         <div class="block-21 mb-4 d-flex">
                             <a class="blog-img mr-4"
@@ -59,7 +60,7 @@
             </div>
             <div class="col-md-3">
                 <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">Office</h2>
+                    <h2 class="ftco-heading-2">@lang('translation.office')</h2>
                     <div class="block-23 mb-3">
                         <ul>
                             <li>

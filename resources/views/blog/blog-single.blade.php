@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('title')
-    BLOG-SINGLE
+    @lang('translation.blog')
 @endsection
 
 @section('content')
@@ -13,11 +13,13 @@
                     <div class="col-md-7 col-sm-12 ftco-animate mb-5">
                         <p class="breadcrumbs" data-scrollax=" properties: { translateY: '70%', opacity: 1.6}">
                             <span class="mr-2">
-                                <a href="{{route('home.index')}}">Home</a>
+                                <a href="{{route('home.index')}}">@lang('translation.homepage')</a>
                             </span>
-                            <span><a href="{{route('blog.index')}}">Blog</a></span>
+                            <span><a href="{{route('blog.index')}}">@lang('translation.blog')</a></span>
                         </p>
-                        <h1 class="mb-3" data-scrollax=" properties: { translateY: '70%', opacity: .9}">Read Our Blog</h1>
+                        <h1 class="mb-3" data-scrollax=" properties: { translateY: '70%', opacity: .9}">
+                            @lang('translation.read_blog')
+                        </h1>
                     </div>
                 </div>
             </div>
@@ -45,7 +47,7 @@
                 </div> <!-- .col-md-8 -->
                 <div class="col-md-4 sidebar ftco-animate">
                     <div class="sidebar-box ftco-animate">
-                        <h3>Most viewed blog</h3>
+                        <h3>@lang('translation.most_blog')</h3>
                         @foreach($most_blogs as $most_blog)
                             <div class="block-21 mb-4 d-flex">
                                 <a class="blog-img mr-4" style="background-image: url({{asset('storage/'.str_replace("\\","/",$most_blog->image))}});"></a>

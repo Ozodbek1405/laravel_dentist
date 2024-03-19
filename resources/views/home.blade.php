@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('title')
-    HOMEPAGE
+    @lang('translation.homepage')
 @endsection
 @section('content')
 

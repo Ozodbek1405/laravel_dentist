@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('title')
-    APPOINTMENT
+    @lang('translation.appointment')
 @endsection
 
 @section('content')
@@ -12,9 +12,14 @@
                 <div class="row slider-text align-items-end">
                     <div class="col-md-7 col-sm-12 ftco-animate mb-5">
                         <p class="breadcrumbs" data-scrollax=" properties: { translateY: '70%', opacity: 1.6}">
-                            <span class="mr-2"><a href="{{route('home.index')}}">Home</a></span> <span>Appointment</span>
+                            <span class="mr-2">
+                                <a href="{{route('home.index')}}">@lang('translation.homepage')</a>
+                            </span>
+                            <span>@lang('translation.appointment')</span>
                         </p>
-                        <h1 class="mb-3" data-scrollax=" properties: { translateY: '70%', opacity: .9}">Appointment</h1>
+                        <h1 class="mb-3" data-scrollax=" properties: { translateY: '70%', opacity: .9}">
+                            @lang('translation.appointment_send')
+                        </h1>
                     </div>
                 </div>
             </div>
@@ -39,7 +44,7 @@
                 </div>
                 <div class="col-md-6 py-5 pl-md-5">
                     <div class="heading-section mb-5 ftco-animate">
-                        <h2 class="mb-2">Get a Free Quote</h2>
+                        <h2 class="mb-2">@lang('translation.appointment_send')</h2>
                     </div>
                     @if (session('success'))
                         <div class="alert alert-success">
@@ -51,7 +56,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <input type="text" name="name" class="form-control" placeholder="Full Name">
+                                    <input type="text" name="name" class="form-control" placeholder="@lang('translation.fullname')">
                                 </div>
                             </div>
                             @error('name')
@@ -59,7 +64,7 @@
                             @enderror
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <input type="text" id="phone" name="phone" class="form-control" placeholder="Phone">
+                                    <input type="text" id="phone" name="phone" class="form-control" placeholder="@lang('translation.phone')">
                                 </div>
                             </div>
                             @error('phone')
@@ -68,7 +73,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label for="message"></label>
-                                    <textarea name="message" id="message" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
+                                    <textarea name="message" id="message" cols="30" rows="5" class="form-control" placeholder="@lang('translation.message')"></textarea>
                                 </div>
                             </div>
                             @error('message')
@@ -76,7 +81,7 @@
                             @enderror
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <input type="submit" value="Get a Quote" class="btn btn-primary py-3 px-5">
+                                    <input type="submit" value="@lang('translation.submit')" class="btn btn-primary py-3 px-5">
                                 </div>
                             </div>
                         </div>

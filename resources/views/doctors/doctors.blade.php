@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('title')
-    DOCTORS
+    @lang('translation.doctor')
 @endsection
 
 @section('content')
@@ -12,9 +12,11 @@
                 <div class="row slider-text align-items-end">
                     <div class="col-md-7 col-sm-12 ftco-animate mb-5">
                         <p class="breadcrumbs" data-scrollax=" properties: { translateY: '70%', opacity: 1.6}">
-                            <span class="mr-2"><a href="{{route('home.index')}}">Home</a></span> <span>Doctors</span>
+                            <span class="mr-2"><a href="{{route('home.index')}}">@lang('translation.homepage')</a></span> <span>@lang('translation.doctor')</span>
                         </p>
-                        <h1 class="mb-3" data-scrollax=" properties: { translateY: '70%', opacity: .9}">Well Experienced Doctors</h1>
+                        <h1 class="mb-3" data-scrollax=" properties: { translateY: '70%', opacity: .9}">
+                            @lang('translation.experience_doctor')
+                        </h1>
                     </div>
                 </div>
             </div>
@@ -25,9 +27,9 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-7 text-center heading-section ftco-animate">
-                    <h2 class="mb-1">Meet Our Experience Dentist</h2>
-                    <h4 class="mb-0">Садыков Айбек Шавкатович </h4>
-                    <h5>Врач-терапевт, ортопед.</h5>
+                    <h2 class="mb-1">@lang('translation.doctor_title')</h2>
+                    <h4 class="mb-0">@lang('translation.doctor_name')</h4>
+                    <h5>@lang('translation.dentist')</h5>
                 </div>
             </div>
         </div>

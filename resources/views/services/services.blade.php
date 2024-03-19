@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('title')
-    SERVICES
+    @lang('translation.services')
 @endsection
 
 @section('content')
@@ -12,9 +12,11 @@
                 <div class="row slider-text align-items-end">
                     <div class="col-md-7 col-sm-12 ftco-animate mb-5">
                         <p class="breadcrumbs" data-scrollax=" properties: { translateY: '70%', opacity: 1.6}">
-                            <span class="mr-2"><a href="{{route('home.index')}}">Главная страница</a></span> <span>Услуги</span>
+                            <span class="mr-2">
+                                <a href="{{route('home.index')}}">@lang('translation.homepage')</a>
+                            </span> <span>@lang('translation.services')</span>
                         </p>
-                        <h1 class="mb-3" data-scrollax=" properties: { translateY: '70%', opacity: .9}">Наш сервис оставит у вас улыбку</h1>
+                        <h1 class="mb-3" data-scrollax=" properties: { translateY: '70%', opacity: .9}">@lang('translation.our_services')</h1>
                     </div>
                 </div>
             </div>
@@ -25,8 +27,8 @@
         <div class="container">
             <div class="row justify-content-center mb-5 pb-5">
                 <div class="col-md-7 text-center heading-section ftco-animate">
-                    <h2 class="mb-2">Новая улыбка — новая жизнь</h2>
-                    <p>Наш сервис дарит вам улыбку.</p>
+                    <h2 class="mb-2">@lang('translation.new_service')</h2>
+                    <p>@lang('translation.our_services_your')</p>
                 </div>
             </div>
             <div class="row">

@@ -1,7 +1,31 @@
 <?php
 
 return [
-
-
-
+    "menu" => "Menyu",
+    "home" => "Bosh sahifa",
+    "about" => "Haqida",
+    "services" => "Xizmatlar",
+    "doctor" => "Doktor",
+    "blog" => "Blog",
+    "appointment" => "Ariza berish",
+    "links" => "Havolalar",
+    "news" => "Yangiliklar",
+    "office" => "Manzil",
+    "homepage" => "Bosh sahifa",
+    "about_us" => "Biz haqimizda",
+    "appointment_send" => "Ariza yuborish",
+    "submit" => "Yuborish",
+    "fullname" => "FIO",
+    "phone" => "Telefon raqam",
+    "message" => "Xabar",
+    "read_blog" => "Bizning blogimizni o'qing",
+    "most_blog" => "Eng ko'p ko'rilgan blog",
+    "read_more" => "Ko'proq o'qish",
+    "our_services" => "Bizning xizmatimiz sizni tabassumingizni ta'minlaydi",
+    "new_service" => "Yangi tabassum - yangi hayot",
+    "our_services_your" => "Bizning xizmatlarimiz tabassumingizga sabab bo'ladi",
+    "experience_doctor" => "Yaxshi tajribali shifokorlar",
+    "doctor_title" => "Bizning tajribali stomotolog",
+    "doctor_name" => "Sodiqov Oybek Shavkatovich",
+    "dentist" => "Vrach-terapevt, ortoped",
 ];

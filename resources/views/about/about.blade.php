@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('title')
-    ABOUT
+    @lang('translation.about')
 @endsection
 
 @section('content')
@@ -13,10 +13,10 @@
                     <div class="col-md-7 col-sm-12 ftco-animate mb-5">
                         <p class="breadcrumbs" data-scrollax=" properties: { translateY: '70%', opacity: 1.6}">
                             <span class="mr-2">
-                                <a href="{{route('home.index')}}">Home</a>
-                            </span> <span>About</span>
+                                <a href="{{route('home.index')}}">@lang('translation.homepage')</a>
+                            </span> <span>@lang('translation.about')</span>
                         </p>
-                        <h1 class="mb-3" data-scrollax=" properties: { translateY: '70%', opacity: .9}">About Us</h1>
+                        <h1 class="mb-3" data-scrollax=" properties: { translateY: '70%', opacity: .9}">@lang('translation.about_us')</h1>
                     </div>
                 </div>
             </div>

@@ -4,28 +4,28 @@
             <img class="w-50 h-25" src="{{asset('images/site-logo.png')}}" alt="Logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="oi oi-menu"></span> Menu
+            <span class="oi oi-menu"></span> @lang('translation.menu')
         </button>
 
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item" id="home">
-                    <a href="/" class="nav-link">Home</a>
+                    <a href="/" class="nav-link">@lang('translation.home')</a>
                 </li>
                 <li class="nav-item" id="about">
-                    <a href="/about" class="nav-link">About</a>
+                    <a href="/about" class="nav-link">@lang('translation.about')</a>
                 </li>
                 <li class="nav-item" id="services">
-                    <a href="/services" class="nav-link">Services</a>
+                    <a href="/services" class="nav-link">@lang('translation.services')</a>
                 </li>
                 <li class="nav-item" id="doctors">
-                    <a href="/doctors" class="nav-link">Doctors</a>
+                    <a href="/doctors" class="nav-link">@lang('translation.doctor')</a>
                 </li>
                 <li class="nav-item" id="blog">
-                    <a href="/blog" class="nav-link">Blog</a>
+                    <a href="/blog" class="nav-link">@lang('translation.blog')</a>
                 </li>
                 <li class="nav-item" id="appointment">
-                    <a href="/appointment" class="nav-link">Appointment</a>
+                    <a href="/appointment" class="nav-link">@lang('translation.appointment')</a>
                 </li>
                 <div class="dropdown mt-2 topbar-head-dropdown header-item">
                     <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
