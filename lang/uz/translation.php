@@ -5,7 +5,7 @@ return [
     "home" => "Bosh sahifa",
     "about" => "Haqida",
     "services" => "Xizmatlar",
-    "doctor" => "Doktor",
+    "doctor" => "Shifokorlar",
     "blog" => "Blog",
     "appointment" => "Ariza berish",
     "links" => "Havolalar",
@@ -25,7 +25,5 @@ return [
     "new_service" => "Yangi tabassum - yangi hayot",
     "our_services_your" => "Bizning xizmatlarimiz tabassumingizga sabab bo'ladi",
     "experience_doctor" => "Yaxshi tajribali shifokorlar",
-    "doctor_title" => "Bizning tajribali stomotolog",
-    "doctor_name" => "Sodiqov Oybek Shavkatovich",
-    "dentist" => "Vrach-terapevt, ortoped",
+    "doctor_title" => "Bizning tajribali stomotologlar",
 ];

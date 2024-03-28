@@ -13,7 +13,7 @@ class HomeController extends Controller
     public function index()
     {
         $most_blogs = Blog::query()->orderByDesc('views')->limit('3')->get();
-        $doctors = Doctor::query()->orderByDesc('created_at')->limit('4')->get();
+        $doctors = Doctor::query()->orderByDesc('created_at')->limit('3')->get();
         return view('home',compact('most_blogs','doctors'));
     }
     /*Language Translation*/

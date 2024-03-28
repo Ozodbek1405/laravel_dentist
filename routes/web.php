@@ -39,6 +39,7 @@ Route::get('/about',[HomeController::class,'about'])->name('about.index');
 
 //doctors
 Route::get('/doctors',[DoctorController::class,'doctor'])->name('doctor.index');
+Route::get('/doctors/detail/{doctor_id}',[DoctorController::class,'doctor_detail'])->name('doctor.detail');
 
 //services
 Route::get('/services',[ServiceController::class,'services'])->name('services.index');

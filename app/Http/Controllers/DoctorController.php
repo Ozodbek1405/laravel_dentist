@@ -13,4 +13,10 @@ class DoctorController extends Controller
         return view('doctors.doctors',compact('doctors'));
     }
 
+    public function doctor_detail($doctor_id)
+    {
+        $doctor = Doctor::find($doctor_id);
+        return view('doctors.doctor-detail',compact('doctor'));
+    }
+
 }
