@@ -34,7 +34,7 @@
 
     <section class="ftco-section ftco-services">
         <div class="container">
-            <div class="row justify-content-center mb-5 pb-5">
+            <div class="row justify-content-center pb-2">
                 <div class="col-md-7 text-center heading-section ftco-animate">
                     <a href="{{route('services.index')}}">
                         <h2 class="mb-2">Новая улыбка — новая жизнь</h2>
@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                <div class="col-md-4 d-flex align-self-stretch ftco-animate">
                     <div class="media block-6 services d-block text-center">
                         <div class="icon d-flex justify-content-center align-items-center">
                             <span class="flaticon-tooth"></span>
@@ -56,7 +56,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                <div class="col-md-4 d-flex align-self-stretch ftco-animate">
                     <div class="media block-6 services d-block text-center">
                         <div class="icon d-flex justify-content-center align-items-center">
                             <span class="flaticon-dental-care"></span>
@@ -69,7 +69,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                <div class="col-md-4 d-flex align-self-stretch ftco-animate">
                     <div class="media block-6 services d-block text-center">
                         <div class="icon d-flex justify-content-center align-items-center">
                             <span class="flaticon-tooth-with-braces"></span>
@@ -81,17 +81,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services d-block text-center">
-                        <div class="icon d-flex justify-content-center align-items-center">
-                            <span class="flaticon-anesthesia"></span>
-                        </div>
-                        <div class="media-body p-2 mt-3">
-                            <h3 class="heading">Анестезия</h3>
-                            <p>В стоматологии анестезия играет важную роль, особенно при проведении более сложных и болезненных процедур, таких как удаление зубов, лечение каналов, имплантация и другие. Анестезия помогает пациентам чувствовать минимум дискомфорта и боли во время лечения.</p>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            <div class="row justify-content-center">
+                <a href="{{route('services.index')}}" class="btn btn-primary btn-outline-primary">
+                    @lang('translation.read_more')
+                </a>
             </div>
         </div>
     </section>
@@ -136,6 +130,11 @@
                         </div>
                     </div>
                 @endforeach
+            </div>
+            <div class="row justify-content-center">
+                <a href="{{route('doctor.index')}}" class="btn btn-primary btn-outline-primary">
+                    @lang('translation.read_more')
+                </a>
             </div>
         </div>
     </section>
@@ -193,8 +192,7 @@
         <div class="container">
             <div class="row justify-content-center mb-5 pb-3">
                 <div class="col-md-7 text-center heading-section ftco-animate">
-                    <h2 class="mb-2">Latest Blog</h2>
-                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                    <h2 class="mb-2">@lang('translation.most_blog')</h2>
                 </div>
             </div>
             <div class="row">
@@ -220,6 +218,11 @@
                     </div>
                 </div>
                 @endforeach
+            </div>
+            <div class="row justify-content-center">
+                <a href="{{route('blog.index')}}" class="btn btn-primary btn-outline-primary">
+                    @lang('translation.read_more')
+                </a>
             </div>
         </div>
     </section>
